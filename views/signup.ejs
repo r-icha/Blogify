@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title>Signup</title>
+    <style>
+      .signup-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: url('/images/herosection.jpg') no-repeat center center/cover;
+        padding: 20px;
+        /* width: 60%; */
+      
+        
+      }
+      .form-container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+      }
+      .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .btn-primary {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+      }
+      @media (max-width: 768px) {
+        .signup-container {
+          padding: 20px;
+        }
+        .form-container {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('./partials/nav') %>
+
+    <div class="signup-container">
+      <div class="form-container">
+        <div class="form-title">Create Your Account</div>
+        <form action="/user/signup" method="post">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" aria-describedby="fullName" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1" />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    
+    <%- include('./partials/scripts') %>
+  </body>
+</html>

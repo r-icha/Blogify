@@ -1,0 +1,232 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="contact-info">
+                    <p><span>Email:</span> info@yourtemplate.net</p>
+                    <p><span>Phone:</span> +880 123 456 789</p>
+                </div>
+            </div>
+
+            <!-- Quick Link Section -->
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <!-- <li><a href="/archived">Archived</a></li>
+                    <li><a href="/author">Author</a></li>
+                    <li><a href="/contact">Contact</a></li> -->
+                </ul>
+            </div>
+
+            <!-- Category Section -->
+            <div class="footer-section">
+                <h3>Category</h3>
+                <ul>
+                    <li><a href="/lifestyle">Lifestyle</a></li>
+                    <li><a href="/technology">Technology</a></li>
+                    <li><a href="/travel">Travel</a></li>
+                    <li><a href="/business">Business</a></li>
+                    <li><a href="/economy">Economy</a></li>
+                    <li><a href="/sports">Sports</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-section">
+                <h3>Weekly Newsletter</h3>
+                <p>Get blog articles and offers via email</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-logo"></div>
+                <span>© richa 2025. All Rights Reserved.</span>
+            </div>
+            <!-- <div class="footer-links">
+                <a href="/terms">Terms of Use</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/cookie">Cookie Policy</a>
+            </div> -->
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #f9f9f9;
+        padding: 60px 0 20px;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+        color: #232536;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .footer-section p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        margin-bottom: 8px;
+    }
+
+    .contact-info span {
+        font-weight: 600;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 12px;
+    }
+
+    .footer-section ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+        color: #4A6CF7;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        outline: none;
+    }
+
+    .newsletter-form button {
+        background-color: #4A6CF7;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+        background-color: #3857d6;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-logo img {
+        height: 24px;
+    }
+
+    .footer-logo span {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #4A6CF7;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+        .footer-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            padding: 40px 0 20px;
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            flex-direction: column;
+        }
+
+        .footer-links {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-content {
+            padding: 0 15px;
+        }
+    }
+</style>
