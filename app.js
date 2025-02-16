@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 8000;
 mongoose.set('strictQuery', false); // Future proof
 
 mongoose
-  .connect(process.env.MONGODB_URI )
+  .connect("process.env.MONGODB_URI")
   .then((e) => console.log("MongoDB Connected"))
   .catch((err) => console.error("MongoDB Connection Error:", err));
 
