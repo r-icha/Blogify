@@ -37,8 +37,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
             >
-             Richa 
-            <%= locals.user.name %>
+            <%= locals.user ? locals.user.fullName : 'Guest' %>
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
