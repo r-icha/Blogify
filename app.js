@@ -33,12 +33,6 @@ app.use(cookiePaser());
 app.use(checkForAuthenticationCookie("token"));
 app.use(express.static(path.resolve("public")));
 
-// Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
-
-// Example: Serve uploaded images correctly
-app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
-
 
 app.get("/", async (req, res) => {
   const allBlogs = await Blog.find({});
